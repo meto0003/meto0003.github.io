@@ -1,0 +1,112 @@
+body{
+    color:darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ctrl forward slash for comments. */
+
+h1{
+    color: peru;
+}
+p{
+    background-color: beige;  
+}
+h1, h2, h3, h4{ 
+    /* multiple at once */
+    text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul{
+    list-style: none;
+}
+
+/* Selecting child elements multiple levels */
+nav ul a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Selecting element with id */
+#treatofweek{
+    background-color: lemonchiffon ;
+}
+/* Selecting elements with class value */
+.orange-link{
+    background-color: lightskyblue;
+    color: orange;
+    text-decoration: none;
+}
+.large-text{
+    font-size: 24px;
+}
+/* Child selector, direct child selector */
+article>p{
+    font-size: 24px;
+}
+
+/* Adjacent sibling selector */
+h3+ul{
+    /* thickness style color */
+
+    border: 1px solid black;
+}
+
+/* Attribute selector */
+[href="#treatofweek"]{
+    font-weight: bold;
+}
+
+/* using Pseudo classes 
+Styling the navigation */
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: orange;
+    /* horizontal vertical blur spread color */
+    box-shadow: -2px 2px 4px 2px black;
+
+}
+
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+nav ul a:active{
+    /* horizontal vertical blur spread color */
+    box-shadow: 0px 0px 4px 2px black;    
+}
+
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+section ol li{
+    font-weight: bold;
+}
+
+/* styling tables */
+
+table{
+    border-collapse: collapse;
+}
+
+/* nth-child selector with odd/even keyword */
+tbody tr:nth-child(even){
+    background-color: #d5836c;
+}
+
+/* nth-child selector with n. where n is 0,1,2,3...  */
+table th:nth-child(n),
+table td:nth-child(n){
+    border: 1px solid #000000;
+}
+
+/* nth-child selector with a formula 
+n = 0,1,2,3,4
+2n+1 = 1,3,5,7
+
+*/
+table td:nth-child(2n+1){
+    background-color: rgba(0, 0, 0, 0.2);
+}
