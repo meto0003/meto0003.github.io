@@ -36,15 +36,26 @@ nav ul a{
     background: lightskyblue url(../images/bread.jpg) no-repeat center center ;
     background-size: cover;
     color: white;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
+
+    /* 1em = 20px */
+    padding: 1em;
+    /* height: 100vh; */
+    width: 50%;
 }
 /* Selecting elements with class value */
 .orange-link{
-    background-color: lightskyblue;
+    background-color: rgb(162, 211, 243);
     color: orange;
     text-decoration: none;
 }
+
+
 .large-text{
     font-size: 24px;
+    /* html = 16px 1.5rem = 1.5 x 16 = 24px */
 }
 /* Child selector, direct child selector */
 article>p{
@@ -120,4 +131,8 @@ n = 0,1,2,3,4
 */
 table td:nth-child(2n+1){
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background: mediumaquamarine;
 }
