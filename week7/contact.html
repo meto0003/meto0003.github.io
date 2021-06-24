@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="uft-8">
+    <title> Meto's Coffee Shop - Contact Us</title>
+</head>
+
+<body>
+   
+    <header>
+        <h1>Meto's Coffee Shop</h1>
+        <!-- Adding a navigation -->
+        <nav>
+            <ul>
+                <li> <a href = "index.html">Home </a> </li>            
+                <li> <a href= "contact.html"> Contact Us </a>  </li> 
+            </ul>
+        </nav> 
+       
+    </header>
+    <!-- Main content of the page -->
+    <main>
+        <h2> Contact Us</h2>
+        <!-- Adding table for hours -->
+        <table>
+            <caption> Hours of Operation</caption>
+            <thead> 
+                <tr>
+                    <th> Day</th>
+                    <th> Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon - Fri</td>
+                    <td> 6 PM - 9 PM</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8 AM - 11 PM </td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Closed </td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <h3> We would love to hear from you!</h3>
+            <!-- Adding form -->
+            <form action="thanks.html" method="get">
+                <div>
+                <label for="fullname"> Your name</label>
+                <input type = "text" id="fullname" name="fullname" placeholder="John Doe"
+                value="Mr.">
+                </div>
+                <div>
+                    <label for="youremail"> Email</label>
+                    <input type = "email" id="youremail" name= "youremail" required>   
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets? (sold in pairs) </label>
+                    <input type="number" id= "tickets" name= "tickets" min="2" max="10" step="2">
+                    
+                </div>
+                <div>
+                    <label for="row"> Select row</label> 
+                    <select name="row" id="row" required>
+                    <option value="">Select one</option>
+                        <option value="front">Front row</option>
+                        <option value="center">Center row</option>
+                        <option value="back">Back row</option>
+                    </select>
+                                 
+                </div>
+                <div>
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="past" value="yes"checked>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="past" value="no">
+                </div>
+                <div>
+                    <h3> Policies</h3>
+                    <input type="checkbox" id="policies" name="policies">
+                    <label for="policies"> I agree with the Terms &amp; Policies. </label>
+                </div>
+                <button type="submit ">Submit</button>   
+            </form>
+        </section>
+    </main>
+    <!-- Site footer -->
+    <footer>Copyright &copy; Meto's Coffee shop, 2021</footer>
+
+
+
+
+</body>
+
+</html>
