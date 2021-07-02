@@ -192,6 +192,7 @@ nav ul a {
 
 .imagecontainer {
     width: 100%;
+    padding-top: 10px;
     margin: 0 auto;
     padding-right: 40px;
     line-height: 20px;
@@ -205,9 +206,10 @@ nav ul a {
     width: 230px;
     height: 230px;
     float: left;
-    padding: 15px;
+    margin: 0 auto;
+    padding-right: 15px;
     padding-left: 8px;
-
+    padding-bottom: 15px;
 }
 
 .site-title {
