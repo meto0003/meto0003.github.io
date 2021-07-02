@@ -138,6 +138,7 @@ body {
     background-color: #aad4cf;
 }
 
+/* sets the container for the middle section, color, size  */
 .container {
     background-color: rgb(212, 233, 231);
     max-width: 1000px;
@@ -147,7 +148,7 @@ body {
 
 }
 
-
+/* sets the image */
 .image {
     background-repeat: no-repeat;
     background-image: url(../images/lone-starfish-wide.jpg);
@@ -156,7 +157,7 @@ body {
 }
 
 
-
+/* adds the header properties   */
 .header {
     font-family: Arial, Helvetica, sans-serif;
     padding: 150px;
@@ -166,6 +167,7 @@ body {
     text-align: center;
 }
 
+/* adjusts the navigation */
 nav ul li {
     display: inline-block;
     width: 32%;
@@ -179,7 +181,7 @@ nav ul li {
     padding-top: 9px;
 
 }
-
+/* excludes the first one so it doesnt get an extra line */
 nav ul li:not(:first-child) {
     border-left: 1px solid black;
 
@@ -190,6 +192,7 @@ nav ul a {
     text-decoration: none;
 }
 
+/* sets the container for image and text */
 .imagecontainer {
     width: 100%;
     padding-top: 10px;
@@ -201,7 +204,7 @@ nav ul a {
     
 
 }
-
+/* edits the image with a left float */
 #my-image {
     width: 230px;
     height: 230px;
@@ -222,7 +225,7 @@ nav ul a {
     padding-top: 20px;
     font-weight: 600px;
 }
-
+/* adjusts all the h3's */
 h3 {
     font-size: 30px;
     margin-top: 40px;
@@ -231,7 +234,7 @@ h3 {
     margin-bottom: 10px;
 
 }
-
+/* adds back the bullet points and edits the list */
 ul li {
     display: list-item;
     font-family: Arial, Helvetica, sans-serif;
@@ -241,6 +244,7 @@ ul li {
     list-style-position: inside
 }
 
+/* adjusts the container for the contact section */
 .inputcontainer {
     border: 0.5px solid black;
     margin: 8px;
@@ -251,7 +255,7 @@ ul li {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* only edits the email and text types */
 input[type=email],
 [type=text] {
     width: 100%;
@@ -267,14 +271,14 @@ textarea {
 h4 {
     font-size: 25px;
 }
-
+/* edits only the submit button to make it transparent and match with required */
 button[type=submit] {
     background-color: transparent;
     border: 1px solid black;
     text-decoration: none;
     padding: 10px 15px;
 }
-
+/* brings footer to the right and aligns */
 footer {
     position: relative;
     max-width: 1000px;
