@@ -624,6 +624,10 @@ iframe{
         margin-left: 90px;
         margin-right: 30px;
     }
+    .about p{
+        padding: 0px;
+        padding-top: 10px;
+    }
 
 
     /* ----services------- */
