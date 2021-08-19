@@ -76,11 +76,11 @@ h3{
     
 }
 .image{
-    height: 150px;
+    display: flex;
+    height: 100px;
     background-color: rgb(199, 138, 7);
     margin-left: 15px;
     margin-right: 15px;
-
     
 }
 .nav-list a,
@@ -147,6 +147,7 @@ button{
 
 }
 .intro h1{
+    font-size: 3em;
     padding-top: 40px;
     margin-left: 20px;
     color: white;
@@ -168,6 +169,7 @@ button{
     margin-top: 35px;
     margin-left: 20px;
     word-spacing: 5px;
+    
 }
 
 /* ---------about us------- */
@@ -193,9 +195,11 @@ button{
 }
 
 /* -----------Services-------- */
-
+#service{
+    padding-top: 20px;
+    padding-left: 20px;
+}
 .services{
-    padding-top: 30px;
     margin: 20px;
     display: flex;
     background-color: rgba(0,0,0,0);
@@ -205,11 +209,12 @@ button{
     
 }
 .services h2{
-    margin-bottom: 30px;
+    margin-bottom: 2px;
 }
 
 /* ----digital---- */
 .digital-services{
+    margin-top: 20px;
     line-height: 1.2;
     background-color:rgba(255,230,172,255) ;
     display: flex;
@@ -362,6 +367,7 @@ button{
     flex-direction: column;
     justify-content:space-between
 }
+
 .Print p{
     padding-top: 25px;
     color: rgb(8, 7, 7);
@@ -433,15 +439,26 @@ button{
     margin:20px;
     line-height: 1.5;
     background-color:rgba(0,0,0,0) ;
-    display: flex;
+    
     margin-top: 20px;
+}
+.services{
+    margin: 20px;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    height: auto;
+    flex-direction: column;
+    justify-content:space-between
+    
 }
 .team{    
     display: flex;
     margin-top: 20px;
     flex-direction: column;
     justify-content:space-between
+    
 }
+
 /* ----john---- */
 .john{
     background-color:rgba(255,230,172,255);
@@ -533,3 +550,189 @@ th{
 iframe{
     width: 100%;
 }
+
+/* ---footer--- */
+.site-footer{
+    background-color:rgb(32, 31, 30) ;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: rgb(199, 138, 7);
+    line-height: 3;
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.site-footer a{
+    color: inherit;
+}
+/* --------------------------------
+            Desktop Styles
+ --------------------------------- */
+ @media screen and (min-width: 900px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+     /* --------nav------ */
+    .nav-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px;
+        height: 120px;
+    }
+    .image{
+        margin: 20px;
+    }
+
+    .nav-list a,
+    .nav-list a:link,
+    .nav-list a:visited{
+    display: flex;
+    padding: 1.5em 1.2em;
+    }
+
+    /* --------welcome----- */
+    .intro{
+        display: grid;
+        justify-content: center;
+        max-height: 900px;
+    }
+    .box-intro{
+        margin: 50px;
+    }
+    .intro h1{
+        font-size: 5em;
+    }
+
+    /* -----about us------ */
+    .about{
+        display: grid;
+        grid-template-columns:repeat(2,auto);
+        grid-template-rows: repeat(1,auto);
+        height: auto;
+        margin: auto;
+        
+    }
+    .about img{
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin-left: 30px;
+        
+    }
+    .about-content {
+        max-width: 100%;
+        margin-left: 90px;
+        margin-right: 30px;
+    }
+
+
+    /* ----services------- */
+
+    .services{
+        display: grid; 
+        grid-template-columns: repeat(6, minmax(0, 1fr));  
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+          "digital-services digital-services digital-services marketing_services marketing_services marketing_services"
+          "video video web web print print "; 
+    }
+    .digital-services { 
+        grid-area: digital-services; 
+        
+    }
+    .marketing_services { 
+        grid-area: marketing_services;
+        
+    }
+    .video { 
+        grid-area: video; 
+    }
+    .web { 
+        grid-area: web; 
+    }
+    .Print { 
+        grid-area: print; 
+        
+    }
+/* ----------vision--------- */
+    .our-vision{
+        margin: 0;
+    }
+    .our-vision h2, p,a{
+        max-width: 70%;
+        padding-left: 40px;
+    }
+    .our-vision a{
+        margin-left: 50px;
+    }
+
+/* --------team--------- */
+
+    .team{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.2fr 1fr 1fr;  
+        margin-left: 9px;
+        
+        
+
+      }
+      #team-head { grid-area: 1 / 1 / 2 / 3; 
+        
+    }
+    .john-img { grid-area: 2 / 1 / 3 / 3; }
+
+    .john { grid-area: 2 / 2 / 3 / 3; 
+        margin-bottom: 0;
+    }
+    .john p{
+        padding-left: 5px;
+    }
+    .Bob { grid-area: 3 / 1 / 4 / 2; 
+        margin-bottom: 0;
+    }
+    .Bob p{
+        padding-left: 5px;
+    }
+
+
+    .bob-img { grid-area: 3 / 2 / 4 / 3; }
+
+/* -----------contact------- */
+    .contact{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.2fr 1fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "contact-head contact-head"
+            "contact-form location"
+            "hours hours"; 
+    }
+    #contact-head { grid-area: contact-head; }
+    .contact-form { grid-area: contact-form; 
+    margin-right: 20px;
+    margin-top: 30px;}
+    .location { grid-area: location; }
+    .hours { grid-area: hours; }
+      
+/*----------footer-----  */
+    .site-footer{
+        height: 50px;
+        line-height: 2;
+        font-size: 0.8em;
+        width:1200px;
+        margin-left: 0;
+        
+    }
+    .site-footer p, a{
+        margin: 0px;
+        padding: 0;
+    }    
+
+ } 
