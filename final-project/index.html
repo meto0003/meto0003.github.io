@@ -23,24 +23,22 @@
     <div class="container">
         <header class="nav">
             <nav class="main-nav">
-                <div class="image">
-                   <img src="images/logo.png" alt="StarMediaLogo" class="logo"> 
-                </div>
-                
-                
                     <ul class="nav-list">
+                        <li><div class="image"> <img src="images/logo.png" alt="StarMediaLogo" class="logo"> </div></li>
                         <li> <a href="index.html" class="current">Home</a></li>
                         <li> <a href="#"> About Us</a></li>
                         <li><a href="#"> Services</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#"> Contact</a></li>
+                        <li>        
+                            <form class= "search" action="search.html" method="get">
+                   
+                                <input type="text" id= "search" placeholder="Search" >
+                                <button type="submit"><i class="im im-magnifier"></i></button>
+                            </form>    
+                        </li>
                     </ul>
 
-                <form class= "search" action="search.html" method="get">
-                   
-                    <input type="text" id= "search" placeholder="Search" >
-                    <button type="submit"><i class="im im-magnifier"></i></button>
-                </form>    
                 
             </nav>
         </header>
@@ -92,9 +90,9 @@
         </section>
 
         <section class="our_services">
-            
+            <h2 id="service">Our Services</h2>
             <div class="services">
-                <h2>Our Services</h2>
+                
                 <div class="digital-services">
                     <img src="images/digital.jpg" alt="services" class="digital">
                     <h3>Digital Transformation</h3>
@@ -173,9 +171,12 @@
         </section>
 
         <section class="our_team">
+
+            
             <div class="team">
-                <h2>Our Team</h2>
-                <img src="images/john.jpg"  alt="john">
+                
+                <h2 id="team-head">Our Team</h2>    
+                <img id="john-img" src="images/john.jpg"  alt="john">
                 <div class="john">
                     <h2>John Doe</h2>
                     <h3>CEO and CO-owner</h3>
@@ -188,7 +189,7 @@
                     </p>
 
                 </div>
-                <img src="images/bob.jpg" alt="bob">
+                <img id="bob-img" src="images/bob.jpg" alt="bob">
                 <div class="Bob">
                     <h2>Bob Rite</h2>
                     <h3>CEO and Co-owner</h3>
@@ -204,10 +205,11 @@
 
         </section>
         <section class="contact">
-            <div class="contact_us">
-                <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
-                <form action="get" class="contact">
+            
+            <h2 id="contact-head">Contact Us</h2>
+                
+            <form action="get" class="contact-form">
+                    <h3>Send us a message</h3>
                     <div>
                         <label for="fullname"> Full Name</label>
                         <input type="text" id="fullname" name="fullname">
@@ -221,8 +223,8 @@
                         <textarea id="message" name="message"></textarea>
                     </div>
                     <button type="button">Send</button>
-                </form>
-            </div>
+                    </form>
+                
             <div class="hours">
                 <h2>Hours of operation</h2>
                 <table>
